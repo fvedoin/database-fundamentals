@@ -1,0 +1,2 @@
+select pessoa.nome from pessoa join participacao on (participacao.codPessoa = pessoa.codPessoa)
+where pessoa.codPessoa = in(select participacao.codPessoa from participacao group by participacao.codProj) group by pessoa.nome

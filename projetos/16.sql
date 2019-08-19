@@ -1,0 +1,1 @@
+select p.nome from pessoa p where p.codPessoa not in (select participacao.codPessoa from participacao)
