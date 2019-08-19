@@ -1,0 +1,1 @@
+SELECT d.nome, count(f.id) FROM diretor d join filme f on (f.diretor = d.id) group by d.nome

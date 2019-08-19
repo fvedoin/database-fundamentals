@@ -1,0 +1,1 @@
+select ano, count(*) from filme group by ano

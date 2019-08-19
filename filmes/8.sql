@@ -1,0 +1,1 @@
+select * from filme join diretor on filme.diretor = diretor.id where diretor.nome='Steven Spielberg' 
